@@ -8,61 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/MoneymanagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/MoneymanagerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/EmailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/EmailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ExcelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ExcelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ExpenseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ExpenseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/FilterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/FilterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/IncomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/IncomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/AuthDTO$AuthDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/AuthDTO$AuthDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/AuthDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/AuthDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/CategoryDTO$CategoryDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/CategoryDTO$CategoryDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/CategoryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/CategoryDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ExpenseDTO$ExpenseDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ExpenseDTO$ExpenseDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ExpenseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ExpenseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/FilterDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/FilterDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/IncomeDTO$IncomeDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/IncomeDTO$IncomeDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/IncomeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/IncomeDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ProfileDTO$ProfileDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ProfileDTO$ProfileDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ProfileDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/ProfileDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/RecentTransationDTO$RecentTransationDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/RecentTransationDTO$RecentTransationDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/RecentTransationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/dto/RecentTransationDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/CategoryEntity$CategoryEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/CategoryEntity$CategoryEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/CategoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/CategoryEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ExpenseEntity$ExpenseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ExpenseEntity$ExpenseEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ExpenseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ExpenseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/IncomeEntity$IncomeEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/IncomeEntity$IncomeEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/IncomeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/IncomeEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity$ProfileEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity$ProfileEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/CategoryRespository.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/CategoryRespository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ExpenseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ExpenseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/IncomeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/IncomeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ProfileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ProfileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/security/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/security/JwtRequestFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/AppUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/AppUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/DashboardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/DashboardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ExcelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ExcelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ExpenseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ExpenseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/IncomeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/IncomeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/NotificationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/util/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/moneymanager-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/moneymanager-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/moneymanager-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/moneymanager-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NoorAbdullah02&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NoorAbdullah02/cash-control-api.git&quot;,
+    &quot;accountId&quot;: &quot;5ccca142-2dc5-4041-988b-934509250545&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -91,31 +50,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.moneymanager [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.moneymanager [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.moneymanager [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MoneymanagerApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hp/Downloads/New folder (2)&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.moneymanager [clean].executor": "Run",
+    "Maven.moneymanager [org.apache.maven.plugins:maven-clean-plugin:3.4.1:clean].executor": "Run",
+    "Maven.moneymanager [org.apache.maven.plugins:maven-jar-plugin:3.4.2:jar].executor": "Run",
+    "Maven.moneymanager [package].executor": "Run",
+    "Maven.moneymanager [validate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.MoneymanagerApplication.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/noor-abdullah/Personal/Project/CashControlBackend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MoneymanagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
@@ -141,8 +108,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26574.91" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26574.91" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
       </set>
     </attachedChunks>
   </component>
@@ -191,6 +158,27 @@
       <workItem from="1753710626724" duration="29000" />
       <workItem from="1753711316677" duration="22000" />
       <workItem from="1753711969840" duration="695000" />
+      <workItem from="1754630332754" duration="78000" />
+      <workItem from="1754630420883" duration="13000" />
+      <workItem from="1754630442350" duration="1516000" />
+      <workItem from="1754632086664" duration="1331000" />
+      <workItem from="1754635703386" duration="460000" />
+      <workItem from="1754644196422" duration="1488000" />
+      <workItem from="1754707634055" duration="12000000" />
+      <workItem from="1754732095863" duration="621000" />
+      <workItem from="1754754596464" duration="2871000" />
+      <workItem from="1754963963601" duration="1232000" />
+      <workItem from="1754982677777" duration="611000" />
+      <workItem from="1755000158721" duration="618000" />
+      <workItem from="1755080881511" duration="620000" />
+      <workItem from="1755670879534" duration="23000" />
+      <workItem from="1755682824934" duration="5240000" />
+      <workItem from="1755713368882" duration="418000" />
+      <workItem from="1755773136767" duration="618000" />
+      <workItem from="1755860356038" duration="3060000" />
+      <workItem from="1755945046718" duration="616000" />
+      <workItem from="1756204564355" duration="6049000" />
+      <workItem from="1756213825494" duration="3294000" />
     </task>
     <servers />
   </component>
