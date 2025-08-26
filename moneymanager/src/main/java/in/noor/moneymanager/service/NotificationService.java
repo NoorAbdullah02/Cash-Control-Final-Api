@@ -26,7 +26,7 @@ public class NotificationService {
     private String frontendUrl;
 
     //@Scheduled(cron = "0 * * * * *",zone = "Asia/Dhaka")
-    @Scheduled(cron = "0 0 22 * * *",zone = "Asia/Dhaka")
+    @Scheduled(cron = "0 0 10 * * *",zone = "Asia/Dhaka")
     public void sendDailyIncomeExpenseReminder(){
         log.info("Job started: sendDailyIncomeExpenseReminder()");
         List<ProfileEntity> profiles = profileRepository.findAll();
@@ -40,7 +40,7 @@ public class NotificationService {
         log.info("Job completed: sendDailyIncomeExpenseReminder()");
     }
     //@Scheduled(cron = "0 * * * * *",zone = "Asia/Dhaka")
-    @Scheduled(cron = "0 0 23 * * *",zone = "Asia/Dhaka")
+    @Scheduled(cron = "0 0 12 * * *",zone = "Asia/Dhaka")
     public void sendDailyExpenseSummary(){
         log.info("Job started: sendDailyExpenseSummary()");
         List<ProfileEntity> profiles = profileRepository.findAll();

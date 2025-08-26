@@ -54,4 +54,8 @@ public ResponseEntity<Map<String ,Object>> login(@RequestBody AuthDTO authDTO) {
       ProfileDTO profileDTO =  profileService.getPublicProfile(null);
       return ResponseEntity.ok(profileDTO);
 }
+
+
+// Added my me deleted
+
 }

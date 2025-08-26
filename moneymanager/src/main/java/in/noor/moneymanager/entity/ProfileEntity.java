@@ -38,4 +38,8 @@ public class ProfileEntity {
             isActive = false;
         }
     }
+
+    //Added by deleted item
+
+
 }

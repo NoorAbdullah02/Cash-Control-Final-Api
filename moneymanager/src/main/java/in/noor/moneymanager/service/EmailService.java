@@ -40,5 +40,4 @@ public class EmailService {
         helper.addAttachment(filename, new ByteArrayResource(attachment));
         mailSender.send(message);
     }
-
 }
