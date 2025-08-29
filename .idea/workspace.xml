@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/NotificationService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +178,7 @@
       <workItem from="1756397670537" duration="170000" />
       <workItem from="1756407264084" duration="12000" />
       <workItem from="1756407481528" duration="3000" />
-      <workItem from="1756473861563" duration="780000" />
+      <workItem from="1756473861563" duration="1717000" />
     </task>
     <servers />
   </component>
