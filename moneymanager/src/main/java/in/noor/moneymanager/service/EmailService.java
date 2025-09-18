@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 public class EmailService {
 
     private final JavaMailSender mailSender;
+    private final JavaMailSender javaMailSender;
     @Value("${spring.mail.properties.mail.smtp.from}")
     private String fromEmail;
 
@@ -40,4 +41,22 @@ public class EmailService {
         helper.addAttachment(filename, new ByteArrayResource(attachment));
         mailSender.send(message);
     }
+
+    public void sendEmailForgotPassword(String to, String subject, String htmlContent) {
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
+            helper.setFrom(fromEmail);
+            helper.setTo(to);
+            helper.setSubject(subject);
+            helper.setText(htmlContent, true); // ✅ HTML content
+            mailSender.send(message);
+        } catch (MessagingException e) {
+            throw new RuntimeException("Failed to send email", e);
+        }
+    }
+
+
+
+
 }

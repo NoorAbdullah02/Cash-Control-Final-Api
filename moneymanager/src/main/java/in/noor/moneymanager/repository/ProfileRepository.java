@@ -12,4 +12,8 @@ public interface ProfileRepository extends JpaRepository<ProfileEntity,Long> {
        // activation token?
 
        Optional <ProfileEntity> findByActivationToken(String activationToken);
+
+       // reset token for Forgotton Password
+
+         Optional <ProfileEntity> findByResetToken(String resetToken);
 }

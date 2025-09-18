@@ -25,7 +25,7 @@ public class NotificationService {
     @Value("${money.manager.frontend.url}")
     private String frontendUrl;
 
-    //@Scheduled(cron = "0 * * * * *",zone = "Asia/Dhaka")
+   // @Scheduled(cron = "0 * * * * *",zone = "Asia/Dhaka")
     @Scheduled(cron = "0 0 10  * * *",zone = "Asia/Dhaka")
     public void sendDailyIncomeExpenseReminder(){
         log.info("Job started: sendDailyIncomeExpenseReminder()");
@@ -39,21 +39,21 @@ public class NotificationService {
         }
         log.info("Job completed: sendDailyIncomeExpenseReminder()");
     }
-    //@Scheduled(cron = "0 * * * * *",zone = "Asia/Dhaka")
+   // @Scheduled(cron = "0 * * * * *",zone = "Asia/Dhaka")
     @Scheduled(cron = "0 0 21 * * *",zone = "Asia/Dhaka")
     public void sendDailyExpenseSummary(){
         log.info("Job started: sendDailyExpenseSummary()");
         List<ProfileEntity> profiles = profileRepository.findAll();
         for (ProfileEntity profile : profiles) {
-          List<ExpenseDTO> todaysExpenses =  expenseService.getExpensesForUserOnDate(profile.getId(), LocalDate.now());
+            List<ExpenseDTO> todaysExpenses =  expenseService.getExpensesForUserOnDate(profile.getId(), LocalDate.now());
             if (!todaysExpenses.isEmpty()) {
-               StringBuilder table = new StringBuilder();
-               table.append("<table style='border-collapse:collapse;width:100%'>");
+                StringBuilder table = new StringBuilder();
+                table.append("<table style='border-collapse:collapse;width:100%'>");
                 table.append("<th style='border: 1px solid #ddd; padding: 8px;'>S.No</th>"
                         + "<th style='border: 1px solid #ddd; padding: 8px;'>Name</th>"
                         + "<th style='border: 1px solid #ddd; padding: 8px;'>Amount</th>"
                         + "<th style='border: 1px solid #ddd; padding: 8px;'>Category</th>"
-                        );
+                );
                 int i =1;
                 for(ExpenseDTO expense : todaysExpenses){
                     table.append("<tr>")

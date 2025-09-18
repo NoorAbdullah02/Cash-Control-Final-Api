@@ -35,6 +35,10 @@ public class ProfileService {
     @Value("${app.activation.url}")
     private String activationURL;
 
+
+    @Value("${money.manager.frontend.url_forgot_password}")
+    private String frontendURL_forResetToken;
+
     @Transactional
     public ProfileDTO registerProfile(ProfileDTO profileDTO) {
         ProfileEntity newProfile = toEntity(profileDTO);
@@ -128,6 +132,87 @@ public class ProfileService {
 
 
 
+   // String activationLink = activationURL+"/api/v1.0/activate?token=" + newProfile.getActivationToken();
+//   public String forgotPassword(String email) {
+//       ProfileEntity profile = profileRepository.findByEmail(email)
+//               .orElseThrow(() -> new RuntimeException("Email not found"));
+//
+//       String resetToken = UUID.randomUUID().toString();
+//       profile.setResetToken(resetToken);
+//       profile.setResetTokenExpiry(LocalDateTime.now().plusHours(1));
+//       profileRepository.save(profile);
+//
+//       // send mail
+//       //String link = activationURL + "/api/v1.0/reset-password?token=" + resetToken;
+//       String link = resetToken;
+//
+//
+//       emailService.sendEmail(profile.getEmail(), "Reset Your Password",
+//               "Hello " + profile.getFullName() + ",\n\nCopy the token number and reset your password:\n" + link);
+//
+//       return resetToken;
+//   }
+
+
+    public String forgotPassword(String email) {
+        ProfileEntity profile = profileRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Email not found"));
+
+        String resetToken = UUID.randomUUID().toString();
+        profile.setResetToken(resetToken);
+        profile.setResetTokenExpiry(LocalDateTime.now().plusHours(1));
+        profileRepository.save(profile);
+
+        // Reset link (frontend handles token)
+        String resetLink = frontendURL_forResetToken+"/reset-password?token=" + resetToken;
+
+
+      //  String activationLink = activationURL+"/api/v1.0/activate?token=" + newProfile.getActivationToken();
+
+        String emailContent =
+                "<!DOCTYPE html>" +
+                        "<html><body style='font-family: Arial, sans-serif;'>" +
+                        "<h2>Password Reset Request</h2>" +
+                        "<p>Hello <b>" + profile.getFullName() + "</b>,</p>" +
+                        "<p>Your reset token (valid for 1 hour):</p>" +
+                        "<div style='padding:12px;background:#f4f6f8;border:1px dashed #888;" +
+                        "font-family:monospace;font-size:16px;text-align:center;'>" +
+                        resetToken +
+                        " <a href='" + resetLink + "' style='text-decoration:none;font-size:18px;margin-left:8px;'>📋</a>" +
+                        "</div>" +
+                        "<p><a href='" + resetLink + "' style='display:inline-block;" +
+                        "padding:12px 20px;background:#007bff;color:white;text-decoration:none;" +
+                        "border-radius:5px;'>Click Here to Reset Password</a></p>" +
+                        "<p style='font-size:12px;color:#555;'>If you didn’t request this, ignore this email.</p>" +
+                        "</body></html>";
+
+        emailService.sendEmailForgotPassword(
+                profile.getEmail(),
+                "Reset Your Password",
+                emailContent
+        );
+
+        return resetToken;
+    }
+
+
+
+
+    public boolean resetPassword(String token, String newPassword) {
+        ProfileEntity profile = profileRepository.findByResetToken(token)
+                .orElseThrow(() -> new RuntimeException("Invalid or expired token"));
+
+        if (profile.getResetTokenExpiry().isBefore(LocalDateTime.now())) {
+            throw new RuntimeException("Reset token expired");
+        }
+
+        profile.setPassword(passwordEncoder.encode(newPassword));
+        profile.setResetToken(null);
+        profile.setResetTokenExpiry(null);
+        profileRepository.save(profile);
+
+        return true;
+    }
 
 
 }

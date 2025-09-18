@@ -1,3 +1,4 @@
+//Jwt Filter
 package in.noor.moneymanager.security;
 
 import in.noor.moneymanager.util.JwtUtil;
@@ -33,7 +34,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         String email = null;
         String jwt = null;
 
-        // FIXED: Better logging and null checks
+// FIXED: Better logging and null checks
         log.debug("Processing request to: {}", request.getRequestURI());
         log.debug("Authorization header: {}", authHeader);
 
@@ -49,7 +50,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
             }
         }
 
-        // FIXED: Added null check for email and authentication
+// FIXED: Added null check for email and authentication
         if (email != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             try {
                 UserDetails userDetails = this.userDetailsService.loadUserByUsername(email);
@@ -72,5 +73,5 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
         filterChain.doFilter(request, response);
     }
-    
+
 }

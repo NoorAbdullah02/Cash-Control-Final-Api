@@ -35,5 +35,10 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="jdbc:mysql://localhost:3306/moneymanager [DEBUG]" uuid="edc7f8b2-68e5-460b-9092-64a0fc503e54">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

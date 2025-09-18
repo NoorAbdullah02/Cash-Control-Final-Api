@@ -39,7 +39,8 @@ public class ProfileEntity {
         }
     }
 
-    //Added by deleted item
-
+    //Added by deleted item  for reset password
+private String resetToken;
+private LocalDateTime resetTokenExpiry;
 
 }

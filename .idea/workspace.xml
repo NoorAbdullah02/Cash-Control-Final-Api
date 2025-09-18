@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/MoneymanagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/MoneymanagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/entity/ProfileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/entity/ProfileEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/repository/ProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/security/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/security/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity$ProfileEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity$ProfileEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ProfileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ProfileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/security/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/security/JwtRequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -26,12 +47,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NoorAbdullah02/Cash-Control-Final-API.git",
-    "accountId": "ae7a6620-304c-46a5-852c-74d16ba0bd90"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NoorAbdullah02/Cash-Control-Final-Api.git&quot;,
+    &quot;accountId&quot;: &quot;ae7a6620-304c-46a5-852c-74d16ba0bd90&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -69,22 +90,28 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="in.noor.moneymanager.dto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MoneymanagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
+        <env name="Aivan_Database-Url" value="jdbc:postgresql://cashcontrol-cashcontrol.g.aivencloud.com:17497/defaultdb?ssl=require&amp;user=avnadmin&amp;password=AVNS_5v7ttfggcxJEf4WFLqQ" />
         <env name="BREVO_FROM_EMAIL" value="sheikhnoorabdullah02@gmail.com" />
         <env name="BREVO_USER_NAME" value="922bac001@smtp-brevo.com" />
         <env name="BREVO_USER_PASSWORD" value="n7yqwGpr9xHZYLcW" />
         <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
-        <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173/" />
-        <env name="Aivan_Database-Url" value="jdbc:postgresql://cashcontrol-cashcontrol.g.aivencloud.com:17497/defaultdb?ssl=require&amp;user=avnadmin&amp;password=AVNS_5v7ttfggcxJEf4WFLqQ" />
+        <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
+        <env name="MONEY_MANAGER_FRONTEND_URL_FORGOT_PASSWORD" value="http://localhost:5173" />
       </envs>
       <module name="moneymanager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="in.noor.moneymanager.MoneymanagerApplication" />
@@ -180,6 +207,27 @@
       <workItem from="1756407264084" duration="12000" />
       <workItem from="1756407481528" duration="3000" />
       <workItem from="1756473861563" duration="4315000" />
+      <workItem from="1756664452579" duration="364000" />
+      <workItem from="1756835374665" duration="235000" />
+      <workItem from="1756835623255" duration="43000" />
+      <workItem from="1756875836365" duration="6000" />
+      <workItem from="1756988354286" duration="642000" />
+      <workItem from="1757054742691" duration="84000" />
+      <workItem from="1757064745374" duration="615000" />
+      <workItem from="1757232936437" duration="388000" />
+      <workItem from="1757248623322" duration="36000" />
+      <workItem from="1757252675814" duration="708000" />
+      <workItem from="1757473881574" duration="2805000" />
+      <workItem from="1757492001538" duration="1276000" />
+      <workItem from="1757495927271" duration="52000" />
+      <workItem from="1757772141205" duration="908000" />
+      <workItem from="1757778805615" duration="241000" />
+      <workItem from="1757828072222" duration="66000" />
+      <workItem from="1757846286576" duration="212000" />
+      <workItem from="1758001696622" duration="1106000" />
+      <workItem from="1758002831024" duration="49000" />
+      <workItem from="1758099576078" duration="21259000" />
+      <workItem from="1758170938481" duration="6996000" />
     </task>
     <servers />
   </component>
