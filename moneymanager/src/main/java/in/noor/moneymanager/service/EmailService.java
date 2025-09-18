@@ -1,62 +1,89 @@
 package in.noor.moneymanager.service;
 
-import jakarta.mail.MessagingException;
-import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ByteArrayResource;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
 public class EmailService {
 
-    private final JavaMailSender mailSender;
-    private final JavaMailSender javaMailSender;
-    @Value("${spring.mail.properties.mail.smtp.from}")
+    @Value("${brevo.api.key}")
+    private String apiKey;
+
+    @Value("${brevo.from.email}")
     private String fromEmail;
 
+    @Value("${brevo.from.name:Money Manager}")
+    private String fromName;
+
+    private final RestTemplate restTemplate = new RestTemplate();
+
+    private static final String BREVO_URL = "https://api.brevo.com/v3/smtp/email";
+
+    /**
+     * Send simple email (plain text)
+     */
     public void sendEmail(String to, String subject, String body) {
-   try{
-       SimpleMailMessage message = new SimpleMailMessage();
-       message.setFrom(fromEmail);
-       message.setTo(to);
-       message.setSubject(subject);
-       message.setText(body);
-       mailSender.send(message);
-   } catch (Exception e) {
-       throw new RuntimeException(e.getMessage());
-   }
-    }
-    public void sendEmailWithAttachment(String to, String subject, String body, byte[] attachment, String filename) throws MessagingException {
-        MimeMessage message = mailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(message, true);
-        helper.setFrom(fromEmail);
-        helper.setTo(to);
-        helper.setSubject(subject);
-        helper.setText(body);
-        helper.addAttachment(filename, new ByteArrayResource(attachment));
-        mailSender.send(message);
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("sender", Map.of("name", fromName, "email", fromEmail));
+        payload.put("to", List.of(Map.of("email", to)));
+        payload.put("subject", subject);
+        payload.put("textContent", body);
+
+        sendRequest(payload);
     }
 
+    /**
+     * Send email with attachment
+     */
+    public void sendEmailWithAttachment(String to, String subject, String body, byte[] attachment, String filename) {
+        String base64File = Base64.getEncoder().encodeToString(attachment);
+
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("sender", Map.of("name", fromName, "email", fromEmail));
+        payload.put("to", List.of(Map.of("email", to)));
+        payload.put("subject", subject);
+        payload.put("htmlContent", "<p>" + body + "</p>");
+        payload.put("attachment", List.of(Map.of(
+                "content", base64File,
+                "name", filename
+        )));
+
+        sendRequest(payload);
+    }
+
+    /**
+     * Send HTML email (forgot password, templates, etc.)
+     */
     public void sendEmailForgotPassword(String to, String subject, String htmlContent) {
-        try {
-            MimeMessage message = mailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
-            helper.setFrom(fromEmail);
-            helper.setTo(to);
-            helper.setSubject(subject);
-            helper.setText(htmlContent, true); // ✅ HTML content
-            mailSender.send(message);
-        } catch (MessagingException e) {
-            throw new RuntimeException("Failed to send email", e);
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("sender", Map.of("name", fromName, "email", fromEmail));
+        payload.put("to", List.of(Map.of("email", to)));
+        payload.put("subject", subject);
+        payload.put("htmlContent", htmlContent);
+
+        sendRequest(payload);
+    }
+
+    /**
+     * Common request sender
+     */
+    private void sendRequest(Map<String, Object> payload) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set("api-key", apiKey);
+
+        HttpEntity<Map<String, Object>> entity = new HttpEntity<>(payload, headers);
+
+        ResponseEntity<String> response = restTemplate.postForEntity(BREVO_URL, entity, String.class);
+
+        if (!response.getStatusCode().is2xxSuccessful()) {
+            throw new RuntimeException("Failed to send email: " + response.getBody());
         }
     }
-
-
-
-
 }

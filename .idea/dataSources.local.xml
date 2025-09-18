@@ -35,5 +35,10 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="jdbc:postgresql://cashcontrol-cashcontrol.g.aivencloud.com:17497/defaultdb?ssl=require&amp;user=avnadmin&amp;password=AVNS_5v7ttfggcxJEf4WFLqQ [DEBUG]" uuid="445d1d54-3423-481e-b775-ca00ff695fe1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>
