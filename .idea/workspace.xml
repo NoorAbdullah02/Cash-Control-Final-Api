@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/MoneymanagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/MoneymanagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/entity/ProfileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/entity/ProfileEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/repository/ProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/security/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/security/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity$ProfileEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity$ProfileEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/entity/ProfileEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ProfileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/repository/ProfileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/security/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/security/JwtRequestFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +208,7 @@
       <workItem from="1758001696622" duration="1106000" />
       <workItem from="1758002831024" duration="49000" />
       <workItem from="1758099576078" duration="21259000" />
-      <workItem from="1758170938481" duration="6996000" />
+      <workItem from="1758170938481" duration="8464000" />
     </task>
     <servers />
   </component>
