@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +206,7 @@
       <workItem from="1758002831024" duration="49000" />
       <workItem from="1758099576078" duration="21259000" />
       <workItem from="1758170938481" duration="13315000" />
-      <workItem from="1758207476262" duration="2875000" />
+      <workItem from="1758207476262" duration="3209000" />
     </task>
     <servers />
   </component>
