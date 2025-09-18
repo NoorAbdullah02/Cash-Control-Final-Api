@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="" />
+    <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +92,7 @@
         <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
         <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
         <env name="MONEY_MANAGER_FRONTEND_URL_FORGOT_PASSWORD" value="http://localhost:5173" />
+        <env name="BREVO_API_EMAIL" value="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" />
       </envs>
       <module name="moneymanager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="in.noor.moneymanager.MoneymanagerApplication" />
@@ -206,7 +209,7 @@
       <workItem from="1758002831024" duration="49000" />
       <workItem from="1758099576078" duration="21259000" />
       <workItem from="1758170938481" duration="13315000" />
-      <workItem from="1758207476262" duration="3209000" />
+      <workItem from="1758207476262" duration="3679000" />
     </task>
     <servers />
   </component>
