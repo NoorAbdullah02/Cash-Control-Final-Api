@@ -198,6 +198,23 @@ public class ProfileService {
 
 
 
+//    public boolean resetPassword(String token, String newPassword) {
+//        ProfileEntity profile = profileRepository.findByResetToken(token)
+//                .orElseThrow(() -> new RuntimeException("Invalid or expired token"));
+//
+//        if (profile.getResetTokenExpiry().isBefore(LocalDateTime.now())) {
+//            throw new RuntimeException("Reset token expired");
+//        }
+//
+//        profile.setPassword(passwordEncoder.encode(newPassword));
+//        profile.setResetToken(null);
+//        profile.setResetTokenExpiry(null);
+//        profileRepository.save(profile);
+//
+//        return true;
+//    }
+
+
     public boolean resetPassword(String token, String newPassword) {
         ProfileEntity profile = profileRepository.findByResetToken(token)
                 .orElseThrow(() -> new RuntimeException("Invalid or expired token"));
@@ -210,6 +227,34 @@ public class ProfileService {
         profile.setResetToken(null);
         profile.setResetTokenExpiry(null);
         profileRepository.save(profile);
+
+        // Build login URL from property
+        String loginUrl = frontendURL_forResetToken + "/login";
+
+        // Send success email
+        String subject = "✅ Your Password Has Been Reset Successfully!";
+        String htmlContent = """
+            <div style="font-family: Arial, sans-serif; background-color: #f4f4f7; padding: 40px;">
+              <div style="max-width: 600px; margin: auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="background: linear-gradient(90deg, #4CAF50, #2E7D32); padding: 20px; text-align: center;">
+                  <h1 style="color: white; margin: 0;">Cash Control</h1>
+                </div>
+                <div style="padding: 30px; text-align: center;">
+                  <h2 style="color: #333;">Password Reset Successful 🎉</h2>
+                  <p style="color: #555; font-size: 16px;">
+                    Hi <b>%s</b>,<br><br>
+                    Your password has been <strong>successfully reset</strong>. If this wasn’t you, please secure your account immediately.
+                  </p>
+                  <a href="%s" style="display:inline-block; margin-top:20px; padding: 12px 20px; background: #4CAF50; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">Login Now</a>
+                </div>
+                <div style="background: #f9f9f9; padding: 20px; text-align: center; font-size: 12px; color: #777;">
+                  © 2025 Cash Control. All rights reserved.
+                </div>
+              </div>
+            </div>
+            """.formatted(profile.getFullName(), loginUrl);
+
+        emailService.sendEmailForgotPassword(profile.getEmail(), subject, htmlContent);
 
         return true;
     }
