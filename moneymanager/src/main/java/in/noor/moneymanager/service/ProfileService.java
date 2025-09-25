@@ -259,5 +259,29 @@ public class ProfileService {
         return true;
     }
 
+    // For update name and profile image
+
+    @Transactional
+    public ProfileDTO updateProfileImage(String imageUrl) {
+        ProfileEntity currentUser = getCurrentProfile(); // fetch from SecurityContext
+        currentUser.setProfileImageUrl(imageUrl);
+        currentUser.setUpdatedAt(LocalDateTime.now());
+        profileRepository.save(currentUser);
+
+        return toDTO(currentUser);
+    }
+
+    @Transactional
+    public ProfileDTO updateProfileName(String fullName) {
+        ProfileEntity currentUser = getCurrentProfile(); // fetch from SecurityContext
+        currentUser.setFullName(fullName);
+        currentUser.setUpdatedAt(LocalDateTime.now());
+        profileRepository.save(currentUser);
+
+        return toDTO(currentUser);
+    }
+
+
+
 
 }

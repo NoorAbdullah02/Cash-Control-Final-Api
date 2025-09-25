@@ -70,5 +70,13 @@
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="jdbc:postgresql://cashcontrol-cashcontrol.g.aivencloud.com:17497/defaultdb?ssl=require&amp;user=avnadmin&amp;password=AVNS_5v7ttfggcxJEf4WFLqQ [DEBUG]" group="​MoneymanagerApplication" uuid="f105c75f-e9e9-4e08-a62c-3a499854a549">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://cashcontrol-cashcontrol.g.aivencloud.com:17497/defaultdb?ssl=require&amp;user=avnadmin&amp;password=AVNS_5v7ttfggcxJEf4WFLqQ</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

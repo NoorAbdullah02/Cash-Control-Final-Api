@@ -26,6 +26,29 @@ public class ProfileController {
         return ResponseEntity.status(HttpStatus.CREATED).body(registeredProfile);
     }
 
+    // For Update Profile Image and Name
+
+    @PutMapping("/profile/image")
+    public ResponseEntity<ProfileDTO> updateProfileImage(
+            @RequestBody Map<String, String> request
+    ) {
+        String imageUrl = request.get("profileImageUrl");
+        ProfileDTO updatedProfile = profileService.updateProfileImage(imageUrl);
+        return ResponseEntity.ok(updatedProfile);
+    }
+
+    @PutMapping("/profile/name")
+    public ResponseEntity<ProfileDTO> updateProfileName(
+            @RequestBody Map<String, String> request
+    ) {
+        String fullName = request.get("fullName");
+        ProfileDTO updatedProfile = profileService.updateProfileName(fullName);
+        return ResponseEntity.ok(updatedProfile);
+    }
+
+
+// Closed that
+
     @GetMapping("/activate")
     public ResponseEntity<String> activateProfile(@RequestParam String token) {
         boolean isActivated = profileService.activateProfile(token);
