@@ -68,22 +68,6 @@ public class ProfileController {
 
 
 
-//    @GetMapping("/activate")
-//    public void activateProfile(
-//            @RequestParam String token,
-//            HttpServletResponse response
-//    ) throws IOException {
-//
-//        boolean isActivated = profileService.activateProfile(token);
-//
-//        if (isActivated) {
-//            response.sendRedirect(frontendURL_for_activate + "/activation-success");
-//        } else {
-//            response.sendRedirect(frontendURL_for_activate + "/activation-failed");
-//        }
-//    }
-
-
     @GetMapping("/activate")
     public ResponseEntity<String> activateProfile(@RequestParam String token) {
         try {

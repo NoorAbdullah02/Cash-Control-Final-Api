@@ -7,6 +7,7 @@
     <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +89,6 @@
       <envs>
         <env name="Aivan_Database-Url" value="jdbc:postgresql://cashcontrol-cashcontrol.g.aivencloud.com:17497/defaultdb?ssl=require&amp;user=avnadmin&amp;password=AVNS_5v7ttfggcxJEf4WFLqQ" />
         <env name="BREVO_API_EMAIL" value="" />
-        <env name="BREVO_FROM_EMAIL" value="sheikhnoorabdullah02@gmail.com" />
-        <env name="BREVO_USER_NAME" value="922bac001@smtp-brevo.com" />
-        <env name="BREVO_USER_PASSWORD" value="n7yqwGpr9xHZYLcW" />
         <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
         <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
         <env name="MONEY_MANAGER_FRONTEND_URL_FORGOT_PASSWORD" value="http://localhost:5173" />
@@ -223,7 +221,7 @@
       <workItem from="1758520739587" duration="18000" />
       <workItem from="1758768558680" duration="2463000" />
       <workItem from="1758878137362" duration="840000" />
-      <workItem from="1759246562536" duration="8071000" />
+      <workItem from="1759246562536" duration="9054000" />
     </task>
     <servers />
   </component>
