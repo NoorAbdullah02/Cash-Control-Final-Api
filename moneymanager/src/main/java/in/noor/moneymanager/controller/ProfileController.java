@@ -93,12 +93,28 @@ public class ProfileController {
                     ? frontendURL_for_activate + "/activation-success"
                     : frontendURL_for_activate + "/activation-failed";
 
-            // Return the URL instead of redirecting for now
-            return ResponseEntity.ok("Would redirect to: " + redirectUrl + " | Activated: " + isActivated);
+            String html = """
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="refresh" content="0; url=%s">
+                <script>window.location.href='%s';</script>
+            </head>
+            <body>
+                <p>Redirecting...</p>
+            </body>
+            </html>
+            """.formatted(redirectUrl, redirectUrl);
+
+            return ResponseEntity.ok()
+                    .header("Content-Type", "text/html; charset=UTF-8")
+                    .body(html);
 
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Error: " + e.getMessage());
+                    .header("Content-Type", "text/html; charset=UTF-8")
+                    .body("<html><body><h1>Error: " + e.getMessage() + "</h1></body></html>");
         }
     }
 
