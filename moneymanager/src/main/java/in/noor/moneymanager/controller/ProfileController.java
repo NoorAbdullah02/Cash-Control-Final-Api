@@ -68,18 +68,37 @@ public class ProfileController {
 
 
 
+//    @GetMapping("/activate")
+//    public void activateProfile(
+//            @RequestParam String token,
+//            HttpServletResponse response
+//    ) throws IOException {
+//
+//        boolean isActivated = profileService.activateProfile(token);
+//
+//        if (isActivated) {
+//            response.sendRedirect(frontendURL_for_activate + "/activation-success");
+//        } else {
+//            response.sendRedirect(frontendURL_for_activate + "/activation-failed");
+//        }
+//    }
+
+
     @GetMapping("/activate")
-    public void activateProfile(
-            @RequestParam String token,
-            HttpServletResponse response
-    ) throws IOException {
+    public ResponseEntity<String> activateProfile(@RequestParam String token) {
+        try {
+            boolean isActivated = profileService.activateProfile(token);
 
-        boolean isActivated = profileService.activateProfile(token);
+            String redirectUrl = isActivated
+                    ? frontendURL_for_activate + "/activation-success"
+                    : frontendURL_for_activate + "/activation-failed";
 
-        if (isActivated) {
-            response.sendRedirect(frontendURL_for_activate + "/activation-success");
-        } else {
-            response.sendRedirect(frontendURL_for_activate + "/activation-failed");
+            // Return the URL instead of redirecting for now
+            return ResponseEntity.ok("Would redirect to: " + redirectUrl + " | Activated: " + isActivated);
+
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Error: " + e.getMessage());
         }
     }
 
