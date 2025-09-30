@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="" />
+    <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +223,9 @@
       <workItem from="1758463218388" duration="2790000" />
       <workItem from="1758514710853" duration="13000" />
       <workItem from="1758520739587" duration="18000" />
-      <workItem from="1758768558680" duration="2225000" />
+      <workItem from="1758768558680" duration="2463000" />
+      <workItem from="1758878137362" duration="840000" />
+      <workItem from="1759246562536" duration="4497000" />
     </task>
     <servers />
   </component>

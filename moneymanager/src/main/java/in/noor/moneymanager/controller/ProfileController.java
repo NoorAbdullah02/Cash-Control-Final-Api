@@ -6,11 +6,15 @@ import in.noor.moneymanager.dto.ProfileDTO;
 import in.noor.moneymanager.service.ProfileService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+
+import java.io.IOException;
+import javax.servlet.http.HttpServletResponse;
 
 @Slf4j
 @RestController
@@ -19,6 +23,9 @@ import java.util.Map;
 public class ProfileController {
 
     private final ProfileService profileService;
+
+    @Value("${money.manager.frontend.url_forgot_password}")
+    private String frontendURL_for_activate;
 
     @PostMapping("/register")
     public ResponseEntity<ProfileDTO> registerProfile(@RequestBody ProfileDTO profileDTO) {
@@ -49,15 +56,35 @@ public class ProfileController {
 
 // Closed that
 
+//    @GetMapping("/activate")
+//    public ResponseEntity<String> activateProfile(@RequestParam String token) {
+//        boolean isActivated = profileService.activateProfile(token);
+//        if (isActivated) {
+//            return ResponseEntity.ok("Activated Successfully");
+//        } else {
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Activation Token is not valid or expired");
+//        }
+//    }
+
+
+
     @GetMapping("/activate")
-    public ResponseEntity<String> activateProfile(@RequestParam String token) {
+    public void activateProfile(
+            @RequestParam String token,
+            HttpServletResponse response
+    ) throws IOException {
+
         boolean isActivated = profileService.activateProfile(token);
+
         if (isActivated) {
-            return ResponseEntity.ok("Activated Successfully");
+            response.sendRedirect(frontendURL_for_activate + "/activation-success");
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Activation Token is not valid or expired");
+            response.sendRedirect(frontendURL_for_activate + "/activation-failed");
         }
     }
+
+
+
 
     @PostMapping("/login")
     public ResponseEntity<Map<String, Object>> login(@RequestBody AuthDTO authDTO) {
