@@ -40,17 +40,135 @@ public class ProfileService {
     private String frontendURL_forResetToken;
 
     @Transactional
+//    public ProfileDTO registerProfile(ProfileDTO profileDTO) {
+//        ProfileEntity newProfile = toEntity(profileDTO);
+//        newProfile.setActivationToken(UUID.randomUUID().toString());
+//        newProfile = profileRepository.save(newProfile);
+//
+//        String activationLink = activationURL+"/api/v1.0/activate?token=" + newProfile.getActivationToken();
+//        String subject = "Activate your CashControl account";
+//        String body = "Click on the following link to activate your CashControl account: " + activationLink;
+//        emailService.sendEmail(newProfile.getEmail(), subject, body);
+//
+//        return toDTO(newProfile);
+//    }
+
+
     public ProfileDTO registerProfile(ProfileDTO profileDTO) {
+        // Create and save profile
         ProfileEntity newProfile = toEntity(profileDTO);
         newProfile.setActivationToken(UUID.randomUUID().toString());
+        newProfile.setActivationTokenExpiry(LocalDateTime.now().plusMinutes(15)); // Token expires in 15 minites
         newProfile = profileRepository.save(newProfile);
 
-        String activationLink = activationURL+"/api/v1.0/activate?token=" + newProfile.getActivationToken();
-        String subject = "Activate your CashControl account";
-        String body = "Click on the following link to activate your CashControl account: " + activationLink;
-        emailService.sendEmail(newProfile.getEmail(), subject, body);
+        // Send beautiful activation email
+        sendActivationEmail(newProfile);
 
         return toDTO(newProfile);
+    }
+
+    private void sendActivationEmail(ProfileEntity profile) {
+        String activationLink = activationURL + "/api/v1.0/activate?token=" + profile.getActivationToken();
+
+        String htmlTemplate = """
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7fa;">
+            <table role="presentation" style="width: 100%%; border-collapse: collapse; background-color: #f4f7fa;">
+                <tr>
+                    <td style="padding: 40px 20px;">
+                        <table role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                            
+                            <!-- Header -->
+                            <tr>
+                                <td style="background: linear-gradient(135deg, #667eea 0%%, #764ba2 100%%); padding: 40px 30px; text-align: center;">
+                                    <h1 style="margin: 0; color: #ffffff; font-size: 32px; font-weight: 700;">💰 CashControl</h1>
+                                    <p style="margin: 10px 0 0; color: rgba(255,255,255,0.9); font-size: 16px;">Your Financial Journey Starts Here</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Main Content -->
+                            <tr>
+                                <td style="padding: 50px 40px;">
+                                    <h2 style="margin: 0 0 20px; color: #333333; font-size: 26px; font-weight: 600;">Welcome Aboard! 🎉</h2>
+                                    <p style="margin: 0 0 20px; color: #666666; font-size: 16px; line-height: 1.6;">
+                                        Hi %s,<br><br>
+                                        We're thrilled to have you join CashControl! You're just one click away from taking control of your finances.
+                                    </p>
+                                    <p style="margin: 0 0 30px; color: #666666; font-size: 16px; line-height: 1.6;">
+                                        To get started, please activate your account by clicking the button below:
+                                    </p>
+                                    
+                                    <!-- CTA Button -->
+                                    <table role="presentation" style="width: 100%%; border-collapse: collapse;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 0 0 30px;">
+                                                <a href="%s" style="display: inline-block; padding: 16px 48px; background: linear-gradient(135deg, #667eea 0%%, #764ba2 100%%); color: #ffffff; text-decoration: none; border-radius: 50px; font-size: 18px; font-weight: 600; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+                                                    Activate My Account
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div style="height: 1px; background: linear-gradient(to right, transparent, #e0e0e0, transparent); margin: 30px 0;"></div>
+                                    
+                                    <p style="margin: 0 0 10px; color: #999999; font-size: 14px;">Button not working? Copy this link:</p>
+                                    <p style="margin: 0 0 30px; color: #667eea; font-size: 13px; word-break: break-all; background-color: #f8f9fa; padding: 12px; border-radius: 8px; border-left: 4px solid #667eea;">%s</p>
+                                    
+                                    <table role="presentation" style="width: 100%%; background-color: #fff9e6; border-radius: 8px; border-left: 4px solid #ffc107;">
+                                        <tr>
+                                            <td style="padding: 15px 20px;">
+                                                <p style="margin: 0; color: #856404; font-size: 14px;">🔒 <strong>Security Note:</strong> This link expires in 15 minutes. If you didn't create this account, please ignore this email.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                            <!-- Footer -->
+                            <tr>
+                                <td style="padding: 30px 40px; text-align: center; background-color: #667eea; color: #ffffff;">
+                                    <p style="margin: 0 0 15px; font-size: 14px; opacity: 0.9;">Need help? We're here for you!</p>
+                                    <p style="margin: 15px 0 0; font-size: 12px; opacity: 0.8;">© 2025 CashControl. All rights reserved.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </body>
+        </html>
+        """.formatted(profile.getFullName(), activationLink, activationLink);
+
+        emailService.sendHtmlEmail(
+                profile.getEmail(),
+                "🎉 Welcome to CashControl - Activate Your Account",
+                htmlTemplate
+        );
+    }
+
+
+    public void resendActivationEmail(String email) {
+        // Find profile by email
+        ProfileEntity profile = profileRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("No account found with this email address"));
+
+        // Check if already activated
+        if (profile.getIsActive()) {
+            throw new RuntimeException("This account is already activated. Please login.");
+        }
+
+        // Generate new token (for security, always generate a fresh token)
+        profile.setActivationToken(UUID.randomUUID().toString());
+        profile.setActivationTokenExpiry(LocalDateTime.now().plusMinutes(15));
+        profileRepository.save(profile);
+
+        // Resend activation email using existing method
+        sendActivationEmail(profile);
     }
 
     public ProfileEntity toEntity(ProfileDTO profileDTO) {

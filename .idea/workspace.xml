@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c41438f6-5d8a-45d2-96f2-a9d2bec0e928" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/entity/ProfileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/entity/ProfileEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/java/in/noor/moneymanager/service/ProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/controller/ProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/moneymanager/target/classes/in/noor/moneymanager/service/ProfileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +230,8 @@
       <workItem from="1758520739587" duration="18000" />
       <workItem from="1758768558680" duration="2463000" />
       <workItem from="1758878137362" duration="840000" />
-      <workItem from="1759246562536" duration="9054000" />
+      <workItem from="1759246562536" duration="9325000" />
+      <workItem from="1759293281136" duration="7250000" />
     </task>
     <servers />
   </component>

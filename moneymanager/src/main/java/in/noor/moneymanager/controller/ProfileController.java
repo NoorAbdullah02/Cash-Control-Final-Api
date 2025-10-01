@@ -219,4 +219,35 @@ public ResponseEntity<Map<String, String>> resetPassword(@RequestBody Map<String
     }
 }
 
+    @PostMapping("/resend-activation")
+    public ResponseEntity<Map<String, Object>> resendActivationEmail(@RequestParam String email) {
+        try {
+            profileService.resendActivationEmail(email);
+
+            return ResponseEntity.ok(Map.of(
+                    "success", true,
+                    "message", "Activation email has been sent successfully! Please check your inbox."
+            ));
+
+        } catch (RuntimeException e) {
+            // Determine status code based on error message
+            HttpStatus status = e.getMessage().contains("already activated")
+                    ? HttpStatus.BAD_REQUEST
+                    : HttpStatus.NOT_FOUND;
+
+            return ResponseEntity.status(status)
+                    .body(Map.of(
+                            "success", false,
+                            "message", e.getMessage()
+                    ));
+
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(Map.of(
+                            "success", false,
+                            "message", "Failed to send activation email. Please try again later."
+                    ));
+        }
+    }
+
 }

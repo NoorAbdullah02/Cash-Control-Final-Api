@@ -38,6 +38,17 @@ public class EmailService {
         sendRequest(payload);
     }
 
+//    for activation email service
+public void sendHtmlEmail(String to, String subject, String htmlBody) {
+    Map<String, Object> payload = new HashMap<>();
+    payload.put("sender", Map.of("name", fromName, "email", fromEmail));
+    payload.put("to", List.of(Map.of("email", to)));
+    payload.put("subject", subject);
+    payload.put("htmlContent", htmlBody);  // ✅ Changed from textContent to htmlContent
+
+    sendRequest(payload);
+}
+
     /**
      * Send email with attachment
      */

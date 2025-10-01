@@ -32,6 +32,12 @@ public class ProfileEntity {
     private LocalDateTime updatedAt;
     private Boolean isActive;
     private String activationToken;
+
+    // Token expiry time 15 minit
+    private LocalDateTime activationTokenExpiry;
+
+
+
 @PrePersist
     public void prePersist(){
         if(this.isActive == null){

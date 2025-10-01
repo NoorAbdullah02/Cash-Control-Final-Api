@@ -41,7 +41,7 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/status", "/health", "/register", "/activate", "/login", "/api/v1.0/login",
-                                "/api/v1.0/excel/download/income", "/forgot-password", "/reset-password/**", "/reset-password","/activate/**"
+                                "/api/v1.0/excel/download/income", "/forgot-password", "/reset-password/**", "/reset-password","/activate/**","/resend-activation"
                         ).permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
